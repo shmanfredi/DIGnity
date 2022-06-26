@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Sora', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  text-align: center;
+  background-color: #002b2f;
+}
+/* HEADER HOME */
+.header {
+  height: 100vh;
+  margin: 0;
+  z-index: -1;
+}
+
+/* NAVBAR */
+.topnav {
+  position: fixed;
+  overflow: hidden;
+  z-index: 9999;
+  /* mix-blend-mode: difference; */
+  width: 100%;
+  /*left: 2vh;*/
+  top: 3vh;
+  text-transform: uppercase;
+  font-weight: 200;
+  justify-content: flex-end;
+}
+
+.menu-item {
+  display: inline-block;
+}
+
+.topnav a {
+  float: left;
+  width: 30vw;
+  color: white;
+  text-decoration: none;
+  padding: 0.5em;
+  letter-spacing: 2px;
+  font-family: 'Sora';
+  font-size: 1vw;
+  position: relative;
+}
+
+.topnav a:hover {
+  text-decoration: underline;
+}
+
+#spotify {
+  margin-left: 0;
+  text-align: left;
+}
+
+#ig {
+  margin-right: 0;
+  text-align: right;
+}
+
+/* VIDEO BACKGROUND */
+#video-wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+  position: absolute;
+   top: -9999px;
+   bottom: -9999px;
+   left: -9999px;
+   right: -9999px;
+   margin: auto;
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: auto;
+}
+
+/* SCRITTA CENTRALE VILLA TATUM */
+img {
+  width: 25%;
+  height: auto;
+  vertical-align: middle;
+  align-content: center;
+  z-index: 11;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.logo {
+
+    /* mix-blend-mode: difference; */
+    width: 70%;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* SCRITTA SCROLL DOWN */
+.scroll {
+  font-size: 1vw;
+  font-family: 'Sora';
+  text-align: center;
+  /* mix-blend-mode: difference; */
+  color: white;
+  position: absolute;
+  bottom: 6vh;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+/* BLOCCO 1 */
+.block {
+  height: 100%;
+  margin: 0;
+  position: relative;
+  background-color: #002b2f;
+}
+
+/* DIV CONTENUTI */
+.content {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding-top: 5%;
+}
+
+/* SCRITTE */
+.video-text {
+  font-family: 'Sora';
+  font-weight: normal;
+  color: black;
+  font-size: 2vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+/* EMBED */
+.videoWrapper {
+  position: relative;
+  padding-bottom: 35.25%; /* 16:9 */
+  margin: 0;
+  height: 0;
+  border-radius: 22px;
+  object-fit: cover;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 78%;
+  margin: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+
+  border: 0.7vw solid #002b2f;
+
+  border-radius: 7px;
+  background: #002b2f;
+  box-shadow: 13px 13px 26px #00b0c0,
+             -13px -13px 26px #00b0c0;
+
+}
+
+.paragrafo {
+  font-family: 'Sora';
+  font-weight: light;
+  color: #fff;
+  font-size: 1.2vw;
+  text-align: center;
+  line-height: auto;
+  padding-bottom: 3vh;
+}
+
+.divvv {
+  width: 31vw;
+  height: auto;
+  position: relative;
+  text-align: center;
+  align-content: center;
+  margin: auto;
+}
+/* BLOCCO 2 */
+/*
+.block2 {
+  height: 80vh;
+  margin: 0;
+  position: relative;
+  text-align: center;
+}
+
+.nft-text {
+  font-family: 'Sora';
+  font-weight: normal;
+  color: black;
+  font-size: 2vw;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.nft-section{
+    position: relative;
+    text-align: center;
+    align-items: center;
+}*/
+
+/* FOOTER */
+.footer {
+  background-color: #002b2f;
+  z-index: 1;
+  margin: 0;
+  /*left: 2vh;*/
+  padding-top: 1vh;
+  padding-bottom: 2vh;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.final-link {
+  display: inline-block;
+}
+
+.finalwhite{
+  color: black;
+  opacity: 0;
+}
+
+.footer a {
+  float: left;
+  width: 32vw;
+  color: white;
+  text-decoration: none;
+  padding: 0.5em, 0;
+  letter-spacing: 2px;
+  font-family: 'Sora';
+  font-size: 1vw;
+  position: relative;
+  background-color: #002b2f;
+  z-index: 1;
+
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* RESSPONSIVENESS */
+
+/* Laptop Medium Ipad */
+@media screen and (max-width:1264px) {
+  .header {height: 100%}
+  .block  {height: 78vh}
+  .block2 {height: 60vh}
+
+  img {
+    width: 30%;
+  }
+}
+.nft-text {
+
+padding-top: 6vh;}
+
+/* Small-Medium Ipad */
+@media screen and (max-width:960px) {
+  .block  {height: 65vh}
+  .block2 {height: 55vh}
+}
+
+@media screen and (max-height: 600px) {
+  .block  {height: 120vh}
+  .block2 {height: 55vh}
+}
+
+@media screen and (max-height: 800px) {
+  .blocl {height: 90vh}
+  .content {padding-top: 4vh;
+  padding-bottom: 12vh}
+  .paragrafo { padding-bottom: 3vh;
+  padding-top: 1vh}
+}
+
+/* Phone */
+@media screen and (max-width: 600px) {
+    .topnav a {
+      width: 100vw;
+      font-size: 1vw;
+      text-align: center;
+      padding: 0.2em;
+      float: center;
+    }
+
+    .header {height: 100%}
+    .block  {height: 65vh}
+    .block2 {height: 33%}
+
+    .scroll { display: none }
+    .video-text {
+        padding-top: 2%;
+        padding-bottom: 1%;
+        color: black;
+        font-size: 6vw;
+
+    }
+    .logo {
+        /* mix-blend-mode: difference; */
+        width: 90%;
+
+    }
+    .nft-text { font-size: 6vw;
+    padding-top: 1vh;}
+    .content {padding-top: 10vh%;
+    padding-bottom: 12vh}
+
+    .footer {padding-top: 0vh;
+    }
+    .footer a {
+      width: 100vw;
+      font-size: 3.5vw;
+      text-align: center;
+      padding: -5em;
+      float: center;
+    }
+
+    .finalwhite {display:none}
+
+    img {
+      width: 50%;
+    }
+    .divvv { width: 75vw;}
+    .paragrafo {
+      font-size: 4vw;
+      padding-bottom: 2vh;
+      padding-top: 2vh;
+
+    }
+
+    .videoWrapper iframe {
+        width: 80%;
+        height: 120%;
+    }
+}

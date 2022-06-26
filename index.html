@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="media/favicon.png">
+    <title>DIGnity</title>
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="styles.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+
+    <!-- PRIMO BLOCCO -->
+    <header class="header" alt="Tatum Rush">
+
+         <!-- NAVBAR -->
+         <!-- <ul class="topnav">
+           <li class="menu-item" id="spotify"><a href="https://open.spotify.com/artist/47p2js8l70JjDWGS0a1hqr?si=2H8gScLfRte5g64aDoFRmQ" target="_blank" data-hover="Spotify">SPOTIFY</a></li>
+           <li class="menu-item" id="tatum"><a href="https://www.undamento.com/tatum-rush/" target="_blank" data-hover="Tatum Rush">TATUM RUSH</a></li>
+           <li class="menu-item" id="ig"><a href="https://www.instagram.com/tatumrush/" target="_blank" data-hover="Instagram">INSTAGRAM</a></li>
+         </ul> -->
+
+         <!-- VIDEO BACKGROUND -->
+         <div id="video-wrap">
+            <video autoplay muted loop playsinline id="video-bg">
+                <source src="media/videodef.mp4" type="video/mp4" [muted]="'muted'" autoplay="autoplay" loop="loop" id="video-start">
+            </video>
+         </div>
+
+         <!-- SCRITTA CENTRALE VILLA TATUM -->
+         <img class="logo" src="media/logo.png" alt="Villa Tatum">
+
+         <!-- SCRITTA SCROLL -->
+         <p class="scroll"> SCROLL DOWN </p>
+
+    </header>
+
+    <!-- SECONDO BLOCCO -->
+    <div class="block">
+      <div class="content">
+
+        <!-- SCRITTA VIDEO -->
+
+        <div class="divvv">
+          <p class="paragrafo"> Year 262.<br><br>The underground remains largely unexplored.<br>The Tower is looking for new explorers to discover which treasures are hidden down there.<br><br>Take part to the Great Exploration!</p>
+        </div>
+        <!-- <h1 class="video-text"> VIDEO </h1> -->
+        <br>
+        <!-- EMBED -->
+        <div class="videoWrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sG2lF-B1wqw?controls=0&amp;showinfo=0&amp;modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true">
+           </iframe>
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+    <!-- TERZO BLOCCO
+    <div class="block2">
+      <div class_"content">
+        <div class="nft-section">
+            <h4 class="nft-text"> NFT </h4>
+      <img src="nft.png" alt="NFT">
+
+      </div>
+    </div>
+        </div>-->
+
+    <!-- FOOTER -->
+    <div class="footer">
+
+      <ul class="footer">
+        <li class="final-link" id="link1"> <a target="_blank" download="DIGnity.app" href="media/DIGnity.app"> Download for MacOS </a></li>
+        <li class="final-link" id="link1"> <a target="_blank" download="DIGnity-PC" href="media/DIGnity-PC"> Download for Windows </a></li>
+        <!-- <li class="final-link" id="link1"> <a href="https://goo.gl/maps/v8bUwLSszTZrBzbP8" target="_blank" data-hover="home">0°00’00.0”N 0°00’00.0E</a></li>
+        <li class="final-link" id="link2"> <a class="finalwhite" >TATUM RUSH</a> </li>
+        <li class="final-link" id="link2"> <a href="https://www.undamento.com/" target="_blank" data-hover="storia">2022 UNDAMENTO ©</a></li> -->
+      </ul>
+
+    </div>
+    <script>
+    Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+   get: function () {
+       return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+   }});
+
+   $('body').on('click touchstart', function () {
+        const videoElement = document.getElementById('video-bg');
+        if (videoElement.playing) {
+            // video is already playing so do nothing
+        }
+        else {
+            // video is not playing
+            // so play video now
+            videoElement.play();
+        }
+    });
+   </script>
+  </body>
+</html>
